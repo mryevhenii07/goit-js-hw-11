@@ -116,7 +116,6 @@ function handleScroll(e) {
   let topHeight = document.documentElement.scrollTop;
   let clHeight = document.documentElement.clientHeight;
   let scrHeight = document.documentElement.scrollHeight;
-  console.log(scrHeight, Math.round(clHeight + topHeight));
   if (Math.round(clHeight + topHeight) === scrHeight) {
     loadMorePictures();
   }
