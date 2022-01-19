@@ -5,3 +5,88 @@
 
 // Стили для файла с примером HTML-фрагмента
 @import './example';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.search-form {
+  margin: 0 auto;
+  background-color: rgb(99, 107, 187);
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input {
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+    width: 330px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .btn-search {
+    padding: 5px;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    width: 70px;
+    height: 50px;
+    font-size: 10px;
+    background-color: rgb(197, 179, 179);
+    cursor: pointer;
+    .specIcon {
+      font-size: 27px;
+    }
+  }
+}
+.load-more {
+  width: 180px;
+  height: 50px;
+  visibility: hidden;
+  display: block;
+  margin-top: 20px;
+  margin: 0 auto;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.load-more:hover,
+.load-more:focus {
+  background-color: rgb(99, 107, 187);
+  color: white;
+}
+.gallery {
+  margin: 0 auto;
+  width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+
+  .photo-card {
+    border-radius: 0 0 8px 8px;
+
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+img {
+  width: 385px;
+  height: 260px;
+}
+.info {
+  padding: 10px;
+  display: flex;
+
+  .info-item {
+    width: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 10px;
+  }
+}
