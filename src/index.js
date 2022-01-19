@@ -6,12 +6,13 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 
 //
 //
-let gallery = new SimpleLightbox('.gallery a');
-const InfiniteScroll = require('infinite-scroll');
 const form = document.querySelector('#search-form');
 const inputEl = form.querySelector('input');
 const gallerys = document.querySelector('.gallery');
 const btnLoadMore = document.querySelectorAll('button')[1];
+
+const InfiniteScroll = require('infinite-scroll');
+let gallery = new SimpleLightbox('.gallery a');
 const picturesApi = new PicturesApi();
 //
 //
